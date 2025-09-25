@@ -19,6 +19,11 @@ header {
   font-weight: bold;
   text-decoration: none;
   color: black;
+  margin: 3px;
+}
+
+.logo h1 a:hover {
+  color: white;
 }
 
 .nav {
