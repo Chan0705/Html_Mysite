@@ -63,7 +63,7 @@ header {
 }
 
 .section h1 {
-  padding-top: 100px;
+  padding-top: 10px;
   /* text-shadow: 가로, 세로, 그림자 크기, 색상 순 */
   text-shadow: 2px 2px 5px black;
   text-align: center;
