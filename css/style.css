@@ -11,8 +11,14 @@ header {
 }
 
 .logo h1 {
+  font-size: 22px;
+}
+
+.logo h1 a {
   font-size: 30px;
   font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 
 .nav {
@@ -57,7 +63,7 @@ header {
 }
 
 .section h1 {
-  padding-top: 10px;
+  padding-top: 100px;
   /* text-shadow: 가로, 세로, 그림자 크기, 색상 순 */
   text-shadow: 2px 2px 5px black;
   text-align: center;
