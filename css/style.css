@@ -20,6 +20,7 @@ header {
   text-decoration: none;
   color: black;
   margin: 3px;
+  text-shadow: 2px 2px 5px white;
 }
 
 .logo h1 a:hover {
