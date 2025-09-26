@@ -1,10 +1,22 @@
+/* 기본 여백 제거 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* header */
 
-header {
+.container {
+  /* display: flex; */
   width: 100%;
-  height: 80px;
+}
+
+header {
+  height: 100px;
   background-color: lightblue;
 }
+
 .logo {
   width: 30%; /* 헤더 크기의 30%*/
   float: left;
@@ -28,16 +40,19 @@ header {
 }
 
 .nav {
-  width: 70%;
+  width: auto;
+  /* height: 100px; */
   float: right;
   font-size: 20px;
 }
 
 .ul {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  /* justify-content: space-around;
+  align-items: center; */
   list-style: none;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .ul li {
@@ -55,5 +70,89 @@ header {
 
 .ul li a:hover {
   color: white;
-  /* background-color: aliceblue; */
+}
+
+/* header img */
+
+.main_img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* section 공통 */
+section {
+  height: 320px;
+  /* 좌우 안쪽여백 브라우저 크기의 가변 길이 */
+  padding: 10px 5%;
+}
+section .page-title {
+  margin: 20px 0;
+}
+section p {
+  line-height: 2.5;
+}
+section .content .photo {
+  display: none;
+}
+
+/* section#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+} */
+
+/* main */
+
+main {
+  background-color: beige;
+  padding: 20px 5%;
+}
+
+h1 {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+p {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+/* footer */
+.foot {
+  height: 60px;
+  background-color: #f5f5f5;
+  /* line-height: 60px; */
+  font-size: 16px;
+  color: #333;
+}
+
+/* 태블릿 기준 */
+@media screen and (min-width: 780px) {
+  #container {
+    width: 780px;
+    margin: 0 auto;
+  }
+  header {
+    height: 360px;
+  }
+  #main_img img {
+    height: 300px;
+  }
+  section {
+    height: 400px;
+    padding: 20px 5%;
+  }
+  section .content .photo {
+    display: block;
+    float: right;
+    width: 40%;
+  }
+  section .content .text {
+    width: 55%;
+    float: left;
+  }
 }
