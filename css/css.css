@@ -51,6 +51,7 @@ section {
 section:nth-of-type(2n) {
   background-color: cyan;
 }
+
 section .page-title {
   margin: 20px 0;
   color: white;

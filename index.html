@@ -1,102 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafe Le Blanc</title>
-    <link rel="stylesheet" href="/css/css.css" />
+    <link rel="stylesheet" href="/css/monthlyCss.css" />
+    <title>MyProfile</title>
   </head>
   <body>
-    <div id="container">
-      <header>
-        <!-- 상단메뉴 -->
-        <nav>
-          <ul id="main-nav">
-            <li><a href="#intro">카페 소개</a></li>
-            <li><a href="#choice">이 달의 추천</a></li>
-            <li><a href="#map">Access</a></li>
-          </ul>
+    <!-- 헤더 -->
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <h3><a href="#">About</a></h3>
+          <h3><a href="#">Career</a></h3>
+          <h3><a href="#">Contact</a></h3>
         </nav>
-        <!-- 배경이미지 -->
-        <div id="main-pic">
-          <img src="img/header1.jpg" alt="메인 배경" />
+      </div>
+    </header>
+    <hr />
+
+    <!-- 메인 -->
+    <main id="main">
+      <section class="section">
+        <div class="About">
+          <h2>About</h2>
+          <div class="float">
+            <img
+              src="/MonthlyTest/img/IMG_SAMPLE.png"
+              alt="sample"
+              class="img"
+            />
+            <ul id="about">
+              <li>名前 : 윤승찬</li>
+              <li>生年月日 : 1996. 07. 05.</li>
+              <li>MBTI : ISTP</li>
+              <li>現住所 : Seoul</li>
+              <li>電話番号 : +82 10-xxxx-xxxx</li>
+              <li>E-mail : email 주소</li>
+            </ul>
+          </div>
         </div>
-      </header>
-      <main id="main">
-        <section id="intro">
-          <div class="page-title">
-            <h1>Le Blanc</h1>
-          </div>
-          <div class="content">
-            <!-- photo -->
-            <div class="photo">
-              <img src="img/cup-1.jpg" alt="커피잔" />
-            </div>
-            <!-- text -->
-            <div class="text">
-              <p>영업 시간: 오전 9시 ~ 밤 9시</p>
-              <p>
-                휴무: 매주 월요일<br />
-                <i
-                  ><small
-                    >(일요일이 공휴일인 경우 월요일 영업, 다음날 휴무)</small
-                  ></i
-                >
-              </p>
-            </div>
-          </div>
-        </section>
-        <section id="choice">
-          <div class="page-title">
-            <h1>이 달의 추천</h1>
-          </div>
-          <div class="content">
-            <!-- photo -->
-            <div class="photo">
-              <img src="img/cup-2.jpg" alt="커피잔" />
-            </div>
-            <!-- text -->
-            <div class="text">
-              <h2>핸드 드립 아이스 커피</h2>
-              <ol>
+        <hr />
+
+        <!-- 경력사항 -->
+        <div>
+          <div id="career">
+            <h2>経歴事項</h2>
+            <div>
+              <ul class="career_ul">
                 <li>
-                  1인분 기준으로 서버에 각얼음 5조각(한 조각의 20cc)을 넣고
-                  추출을 시작한다.
+                  2021.08 ~ 2022.05. | FOBLGATE 顧客相談、社内運營支援部署
                 </li>
                 <li>
-                  평상시 보다 원두의 양은 2배 정도(20g)와 추출액은 얼음 포함해서
-                  200cc까지 내린다.
+                  2022.05 ~ 2023.03. | FOBLGATE コンプライアンス(Compliance)
                 </li>
-                <li>아이스 잔에 얼음 6~7개 섞어서 시원하게 마신다.</li>
-              </ol>
+                <li>
+                  2023.07 ~ 2024.06 | Peertec GDAC コンプライアンス(Compliance)
+                </li>
+                <li>2024.11 ~ 2025.05. | KTIS ケータイ販売営業</li>
+                <li>2025.06.03 ~ 進行中 | Space CL 日本就職IT開発者養成課程</li>
+              </ul>
             </div>
           </div>
-        </section>
-        <section id="map">
-          <div class="page-title">
-            <h1>Access</h1>
-          </div>
-          <div class="content">
-            <!-- photo -->
-            <div class="photo">
-              <img src="img/map.png" alt="카페약도" />
+          <hr />
+
+          <!-- 자격증  -->
+          <div id="table_css">
+            <h2>資格證</h2>
+            <div>
+              <table id="table">
+                <thead>
+                  <tr>
+                    <th>자격증 명</th>
+                    <th>취득일</th>
+                    <th>발급기관</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>TOEIC</td>
+                    <td>2020.12.</td>
+                    <td>YBM</td>
+                  </tr>
+                  <tr>
+                    <td>第1種普通運転免許証</td>
+                    <td>2016.06</td>
+                    <td>大韓民国警察庁</td>
+                  </tr>
+                  <tr>
+                    <td>JPT 試験受験予定(620点)</td>
+                    <td>2025.09.26</td>
+                    <td>韓國稅務士會</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <!-- text -->
-            <div class="text">
-              <p>서울시 금천구 가산디지털2로 123</p>
-              <p>7호선 가산디지털단지역 8번 출구</p>
+          </div>
+          <hr />
+          <!-- contact -->
+          <div class="contact">
+            <h2>contact</h2>
+            <div class="form">
+              <form action="" method="post">
+                <p>email</p>
+                <input type="text" name="contact" id="contact" />
+                <button class="button">발송</button>
+              </form>
             </div>
           </div>
-        </section>
-      </main>
-      <footer>
-        <ul id="bottom-menu">
-          <li><a href="">카페소개</a></li>
-          <li><a href="">개인정보 처리방침</a></li>
-          <li><a href="">이용약관</a></li>
-          <li><a href="">Access</a></li>
-        </ul>
-      </footer>
-    </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <hr />
+    <footer></footer>
   </body>
 </html>
