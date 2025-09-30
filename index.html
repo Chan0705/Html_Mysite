@@ -11,9 +11,10 @@
     <header>
       <div class="container">
         <nav class="nav">
-          <h3><a href="#">About</a></h3>
-          <h3><a href="#">Career</a></h3>
-          <h3><a href="#">Contact</a></h3>
+          <h3><a href="#main">About</a></h3>
+          <h3><a href="#career">Career</a></h3>
+          <h3><a href="#table_css">License</a></h3>
+          <h3><a href="#contact">Contact</a></h3>
         </nav>
       </div>
     </header>
@@ -35,8 +36,6 @@
               <li>生年月日 : 1996. 07. 05.</li>
               <li>MBTI : ISTP</li>
               <li>現住所 : Seoul</li>
-              <li>電話番号 : +82 10-xxxx-xxxx</li>
-              <li>E-mail : email 주소</li>
             </ul>
           </div>
         </div>
@@ -49,15 +48,15 @@
             <div>
               <ul class="career_ul">
                 <li>
-                  2021.08 ~ 2022.05. | FOBLGATE 顧客相談、社内運營支援部署
+                  2021.08. ~ 2022.05. | FOBLGATE 顧客相談、社内運營支援部署
                 </li>
                 <li>
-                  2022.05 ~ 2023.03. | FOBLGATE コンプライアンス(Compliance)
+                  2022.05. ~ 2023.03. | FOBLGATE コンプライアンス(Compliance)
                 </li>
                 <li>
-                  2023.07 ~ 2024.06 | Peertec GDAC コンプライアンス(Compliance)
+                  2023.07. ~ 2024.06 | Peertec GDAC コンプライアンス(Compliance)
                 </li>
-                <li>2024.11 ~ 2025.05. | KTIS ケータイ販売営業</li>
+                <li>2024.11. ~ 2025.05. | KTIS ケータイ販売営業</li>
                 <li>2025.06.03 ~ 進行中 | Space CL 日本就職IT開発者養成課程</li>
               </ul>
             </div>
@@ -98,13 +97,20 @@
           </div>
           <hr />
           <!-- contact -->
-          <div class="contact">
+          <div id="contact">
             <h2>contact</h2>
             <div class="form">
-              <form action="" method="post">
-                <p>email</p>
-                <input type="text" name="contact" id="contact" />
-                <button class="button">발송</button>
+              <!-- <form action="" method="post"> -->
+              <form>
+                <p>E-mail : yjs060@hanmail.net</p>
+                <p>Ph : 010-2014-2658</p>
+                <input
+                  type="text"
+                  name="contact"
+                  id="input"
+                  placeholder="내용을 입력해주세요."
+                />
+                <button onclick="handleOnclick()" class="button">발송</button>
               </form>
             </div>
           </div>
@@ -114,6 +120,11 @@
 
     <!-- footer -->
     <hr />
-    <footer></footer>
+    <footer>
+      <div>
+        <p>YOON SEUNG CHAN</p>
+      </div>
+    </footer>
+    <script src="/MonthlyTest/montlyJs.js"></script>
   </body>
 </html>

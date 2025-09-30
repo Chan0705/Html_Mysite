@@ -197,7 +197,7 @@ body {
 
 /* contact */
 
-.contact {
+#contact {
   display: grid;
   flex-direction: column;
   border: 2px solid lightblue;
@@ -206,7 +206,7 @@ body {
   padding: 3px;
 }
 
-.contact h2 {
+#contact h2 {
   color: black;
   border: 1px solid rgb(139, 188, 236);
   border-radius: 3px;
@@ -229,14 +229,17 @@ body {
   list-style: none;
   color: black;
   font-weight: bold;
+  font-size: 15px;
   margin: 3px;
   padding: 3px;
   text-shadow: 1px 1px 3px lightgray;
 }
 
-#contact {
+#input {
   padding: 3px;
   margin: 3px;
+  border: 1px solid rgb(139, 188, 236);
+  border-radius: 3px;
 }
 
 .button {
@@ -249,6 +252,15 @@ body {
   color: yellow;
   background-color: lightblue;
   text-shadow: 1px 1px 3px black;
+}
+
+/* footer */
+
+footer div p {
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 10px;
+  text-shadow: 3px 3px 3px whitesmoke;
 }
 
 /* 반응형 */
@@ -306,7 +318,7 @@ body {
   }
 
   .img {
-    width: 40%;
+    width: 30%;
   }
 
   #about {
