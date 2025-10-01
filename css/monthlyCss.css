@@ -268,7 +268,7 @@ footer div {
   padding-right: 3px;
   border: 1px solid sandybrown;
   border-radius: 3px;
-  width: 15%;
+  width: 30%;
 }
 
 footer div p {
@@ -316,7 +316,7 @@ footer div p {
     }
 
     #about {
-      width: auto%;
+      width: auto;
       height: 95%;
     }
 
